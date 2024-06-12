@@ -1,11 +1,13 @@
-//Framework
+//Framework & Libraries
 const express = require('express')
 const uuid = require('uuid')
+const cors =  require('cors')
 
 const port = 3001
 const app = express()
 
 app.use(express.json())
+app.use(cors())
 
 //save orders
 const orders = []
